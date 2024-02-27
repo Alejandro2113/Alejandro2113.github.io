@@ -1,0 +1,80 @@
+/* Hola felipe-blanco, se que no deben de haber 2 .css pero si lo hago con el que ya tenia me chocan y tenia muchos !importa. 
+
+-Olvidalo, rehice el css anterior porq encontré una mejor manera, no permitiria que esto me gane, dejo esto como evidencia porque fue 
+lo primero que use para stilizar, una vez dicho esto, se que no vale para nada pero quiero que me quede como base. gracias  =) 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+.bodyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px auto 120px;
+  grid-template-areas: 
+    "header header header header"
+    "nav main main main"
+    "footer footer footer footer"
+  ;
+  column-gap: 5px;
+  row-gap: 5px;
+
+}
+
+.gridPageHeader {
+  background-color: #038c2e;
+  grid-area: header;
+}
+
+.gridPageNav {
+  background-color: #c8b015;
+  grid-area: nav;
+}
+ 
+.gridPageMain {
+  background-color: aqua;
+  grid-area: main;
+}
+
+.gridPageFooter {
+  background-color: teal;
+  grid-area: footer;
+}
+
+h1{
+    font-size: 30px;
+    margin: 2px 10px;
+    
+}
+
+h2{
+    font-size: 28px;
+    margin: 2px 10px;
+    
+}
+h3{
+  font-size: 24px;
+  margin: 2px 10px;
+
+}
+
+h4{
+  font-size: 22;
+  text-align: center;
+  margin: 2px 10px;
+
+}
+
+p{
+  font-size: 18px;
+  text-align: justify;
+  margin: 20px 20px;
+}
+
+.logoIlustrativo{
+  width: 120px;
+  height: 120px
+}
